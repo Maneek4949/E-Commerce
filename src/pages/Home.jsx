@@ -1,13 +1,12 @@
 import { Fragment } from "react";
-import Banner from "../components/Banner/Banner";
 import ShopList from "../components/ShopList";
-import bannerImg from "../Images/HomeBanner.jpg"
 import { products } from "../utils/products.jsx";
+import SliderHome from "../components/Slider.jsx";
 
 const Home = () => { 
   return (
     <Fragment>
-      <Banner title="Shop Now" productBg={bannerImg} />
+      <SliderHome/>
       <ShopList productItems={products}/>
     </Fragment>
   );
