@@ -120,24 +120,27 @@ button {
 /*   ---Cart Page---   */
 
 .cart-items {
-  background: #f6f9fc;
   height: auto;
 }
 
 .cart-items .cart-total {
-  background-color: white;
+  background-color: var(--mid-yell);
   padding: 20px;
   margin-bottom: 30px;
+  border-radius: 25px;
 }
 
 .cart-list {
   position: relative;
-  background: white;
+  background-color: #fffbdb;
   margin-bottom: 30px;
   padding: 20px;
+  border-radius: 25px;
 }
 
 .cart-list .image-holder {
+  background: url(./assets/gradient-bg.png);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,10 +199,11 @@ button {
 }
 
 .cartControl button {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   border-radius: 5px;
   font-size: 16px;
+  background: var(--mid-yell);
 }
 
 .incCart {
@@ -279,4 +283,5 @@ button.delete ion-icon {
 .totalPrice h3{
   font-size: large;
   font-weight: 700;
+  color: var(--org-color);
 }
