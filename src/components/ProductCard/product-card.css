@@ -18,12 +18,15 @@
 }
 
 .product {
-    background: #fff;
+    background: url(../../assets/gradient-bg.png);
+    background-color: #fffbdb;
     padding: 20px;
     position: relative;
-    border-radius: 8px;
+    border-radius: 30px;
     box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
     margin: 10px;
+    background-size: contain;
+
 }
 
 .product h3 {
@@ -50,6 +53,19 @@
     margin: 20px 0 10px;
 }
 
+.addTobtn {
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, var(--org-color), var(--yellow-color));
+    box-shadow: 0 4px 15px 0 var(--org-color);
+    font-weight: 700;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+.addTobtn:hover{
+    box-shadow: 0 0px 0px 0 rgba(49, 196, 190, 0.75);
+  }
 /* .price button {
     background: none;
     color: #0f3460;

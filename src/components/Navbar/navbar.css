@@ -1,10 +1,10 @@
 /* Navbar Section  */
 .navbar {
   position: relative !important;
-  background-color: white;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   font-size: 1.2rem !important;
+  backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
 }
 
 .navbar.fixed {
@@ -89,15 +89,9 @@
   gap: 5px;
 }
 
-.navbar-brand ion-icon {
+.navbar-brand h2 {
   font-size: 25px;
-}
-
-.logo {
-  font-size: 25px;
-  font-weight: 500;
-  color: black;
-  margin: 0;
+  font-weight: 700;
 }
 
 .navbar-link {
@@ -109,11 +103,19 @@
   font-size: 10px !important;
   padding: 0.8rem 0.5rem 0.2rem !important;
 }
+.navbar-links{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
 .nav-link-label {
-  color: black;
+  color: var(txt-color);
   font-size: 18px !important;
   font-weight: 600;
+}
+.nav-link-label:hover{
+ color: var(--org-color); 
 }
 
 .nav-icon {
@@ -126,13 +128,18 @@
   position: relative !important;
   z-index: 3;
 }
+#cartIcon{
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--mid-yell);
+}
 
 .cart::before {
   content: attr(data-num);
   position: absolute;
   right: 0;
   top: -5px;
-  background-color: #0f3460;
+  background-color: var(--org-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
